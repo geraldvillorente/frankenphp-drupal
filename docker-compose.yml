@@ -4,9 +4,9 @@
 #
 # During initial Drupal setup,
 # Database type: PostgreSQL
-# Database name: postgres
-# Database username: postgres
-# Database password: example
+# Database name: drupal
+# Database username: drupal
+# Database password: drupal
 # ADVANCED OPTIONS; Database host: postgres
 
 version: '3.1'
@@ -33,5 +33,7 @@ services:
       context: .
       dockerfile: db.Dockerfile
     environment:
-      POSTGRES_PASSWORD: example
+      POSTGRES_USER: drupal
+      POSTGRES_DB: drupal
+      POSTGRES_PASSWORD: drupal
     restart: always
