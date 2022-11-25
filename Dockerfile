@@ -1,4 +1,4 @@
-FROM geraldvillorente/frankenphp
+FROM dunglas/frankenphp
 
 RUN install-php-extensions \
     apcu \

@@ -6,7 +6,7 @@ the modern app server for PHP.
 ## Getting Started
 
 ```
-git clone https://github.com/dunglas/frankenphp-drupal
+git clone https://github.com/geraldvillorente/frankenphp-drupal
 cd frankenphp-drupal
 docker compose pull --include-deps
 docker compose up
@@ -22,3 +22,6 @@ During initial Drupal setup:
 * ADVANCED OPTIONS; Database host: `postgres`
 
 # Accessing Drupal codebase
+
+# Credits
+All credit goes to the original author of FrankenPHP.
