@@ -20,3 +20,5 @@ During initial Drupal setup:
 * Database username: `postgres`
 * Database password: `example` (change it in `docker-compose.yml`)
 * ADVANCED OPTIONS; Database host: `postgres`
+
+# Accessing Drupal codebase
