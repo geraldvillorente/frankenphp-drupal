@@ -1,4 +1,4 @@
-FROM dunglas/frankenphp
+FROM geraldvillorente/frankenphp
 
 RUN install-php-extensions \
     apcu \
@@ -13,7 +13,7 @@ COPY --from=drupal /usr/local/etc/php/conf.d/* /usr/local/etc/php/conf.d/
 COPY --from=composer/composer:2-bin /composer /usr/local/bin/
 
 # Clone the repo
-COPY "run.sh" .
+COPY "clone.sh" .
 RUN ["chmod", "+x", "./clone.sh"]
 ENTRYPOINT [ "./clone.sh" ]
 
